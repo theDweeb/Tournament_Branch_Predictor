@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "main.h"
 #include "gshare.h"
 #include "tll.h"
 
@@ -15,11 +16,6 @@ int TLL_Outcome = 0;
 int voteCount = 4;
 string vote = "";
 
-// Function Prototypes
-void getnLSB(int &nLSB);
-void getCounter(int &nCounter);
-string pick_predictor(string gs, string tll, int voteCount);
-void update_voter(int gs, int tll, int &voteCount);
 
 int main() {
     string inAddress, inDirection = ""; // holds input from trace file
@@ -85,14 +81,14 @@ int main() {
 // Function Declarations
 void getnLSB(int &nLSB) {
     int size = 0;
-    cout << "Enter in pattern history table index size(ex. 1024): ";
+    cout << "Enter in pattern history table index size(i.e. 1024): ";
     cin >> size;
     nLSB = size;
 }
 
 void getCounter(int &nCounter) {
     int size = 0;
-    cout << "Enter in saturation counter size (int bits ex. 2): ";
+    cout << "Enter in the BIT size for the saturation counter(i.e. 2): ";
     cin >> size;
     nCounter = size;
 }
