@@ -21,4 +21,6 @@ second prompt: Asks for the BIT size for the saturation counter
       6
       etc...
      
+![Alt text](example.png?raw=true "Results")
+     
      
