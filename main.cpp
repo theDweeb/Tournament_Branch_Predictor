@@ -81,7 +81,7 @@ int main() {
                 TLL_Outcome = 1;
             }
             // Voter will choose which prediction to use
-            vote = pick_predictor(gsharePrediction, bimodalPrediction, voteCount);
+            vote = pick_predictor(gsharePrediction, tllPrediction, voteCount);
             if(vote != inDirection) totalMiss++;
 
             update_voter(GShare_Outcome, TLL_Outcome, voteCount);
@@ -101,7 +101,7 @@ int main() {
     cout << "GSelect miss rate: " << GSelectMissRate << " (Accuracy: " << (100-GSelectMissRate) << ")\n";   
     cout << "GShare miss rate: " << GShareMissRate << " (Accuracy: " << (100-GShareMissRate) << ")\n";
     cout << "TLL miss rate: " << tllMissRate << " (Accuracy: " << (100-tllMissRate) << ")\n";
-    cout << "Tournament (Bimodal + GShare) miss rate: " << totalMissRate << " (Accuracy: " << (100-totalMissRate) << ")\n\n";
+    cout << "Tournament (GShare + TLL) miss rate: " << totalMissRate << " (Accuracy: " << (100-totalMissRate) << ")\n\n";
 
     return 0;
 }
