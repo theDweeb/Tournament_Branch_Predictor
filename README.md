@@ -1,4 +1,6 @@
 # Tournament_Branch_Predictor
+TO USE TRACE FILES GENERATED FROM REZA'S BRANCH EXTRACTOR, USE MAIN(reza).cpp INSTEAD OF main.cpp
+
 Hybrid branch predictor (GShare + two level local)
 
 Clone / Download the repository
